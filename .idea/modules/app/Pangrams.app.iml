@@ -24,6 +24,31 @@
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
     </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../app/build/tmp/kotlin-classes/debug" />
+          <option name="classpath" value="$MODULE_DIR$/../../../app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/a32392b96b447a389645ae62c6bd1898/design-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/731669438ce24ea7bbee3b5c2f762006/appcompat-v7-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/25335cf1e114460bcaa3eb4542c66a3b/support-fragment-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/8a69cc835feca5fa33191bb5ad50c1f8/recyclerview-v7-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/1753b0c0abcd1c7a97886ae1e85b766f/animated-vector-drawable-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/c7d49b3542f8cf2032131f831e21c744/support-core-ui-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/f959df4fc2864cb2078ff9e50f4c02f6/support-core-utils-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/494cda670f7ad56a0f6877d8741be275/transition-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/2c3661a2a93613c1e6c4bda9c8850dbc/support-vector-drawable-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/50aab40b74b2731d105ac9e38e5d7743/viewpager-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/dfdae2e1ee52e7a635ad0778809e0890/coordinatorlayout-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/895c16f28e9f8d9f5fe70684d66a9c0c/drawerlayout-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/2009948ebace94685e208c94a2de8a05/slidingpanelayout-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/8ed15c1ce3a9dc18891631e8541e252d/customview-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/efa94fc01a414cda8b9235fab25a2565/swiperefreshlayout-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/f73336ee764824879d7bb79a32c06ac9/asynclayoutinflater-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/2cb094169fb65be5de19367eba1686ca/loader-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/9d49195598b9161d0e49233d5f580127/support-compat-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/03c3c2ef418e4b280137f343e345a46d/cardview-v7-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/aeae4b341e9522a30a85d0849462bf72/versionedparcelable-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/modules-2/files-2.1/com.android.support/collections/28.0.0/c1bcdade4d3cc2836130424a3f3e4182c666a745/collections-28.0.0.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/0b51674403f568b409886e7d3a48711f/cursoradapter-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/a5127c7b9e6e43e06fe91f5baea089da/runtime-1.1.1-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/abe2246c921693bf8c212f918576b76f/interpolator-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/3a1ab347f3ae1ec4c314a813617458a6/documentfile-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/39d667e6060ac7741b7d835118cb4ce4/localbroadcastmanager-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/6b1a4c3ada8d6c1fae24249572feb828/print-28.0.0-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/129592eea1ee0fa1f80c4d79f78c7dbc/viewmodel-1.1.1-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/b3bc9281b5cc0265fb95794eb2f64c48/livedata-1.1.1-api.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/2f57eb0c26a24a24e102c0679f460842/livedata-core-1.1.1-api.jar;C:/Users/dfran/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.1/207a6efae6a3555e326de41f76bdadd9a239cbce/common-1.1.1.jar;C:/Users/dfran/.gradle/caches/transforms-2/files-2.1/fa9baa7c2959caec83d6178abab11ad0/runtime-1.1.1-api.jar;C:/Users/dfran/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.1/e55b70d1f5620db124b3e85a7f4bdc7bd48d9f95/common-1.1.1.jar;C:/Users/dfran/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/28.0.0/ed73f5337a002d1fd24339d5fb08c2c9d9ca60d8/support-annotations-28.0.0.jar;C:/Users/dfran/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.4.20/9de2c79e95d4b4699a455e88ba285a95352e0bea/kotlin-stdlib-jdk7-1.4.20.jar;C:/Users/dfran/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.4.20/9be77b243a362b745e365f286627b8724337009c/kotlin-stdlib-1.4.20.jar;C:/Users/dfran/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.4.20/c6761d7805b5312302f2bbd78cda68c976ce0c70/kotlin-stdlib-common-1.4.20.jar;C:/Users/dfran/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar;C:/Users/dfran/AppData/Local/Android/Sdk/platforms/android-28/android.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="app_debug" />
+          <option name="languageVersion" value="1.4" />
+          <option name="apiVersion" value="1.4" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
     <output url="file://$MODULE_DIR$/../../../app/build/intermediates/javac/debug/classes" />
@@ -47,6 +72,10 @@
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:common:1.1.1" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.core:common:1.1.1" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-annotations:28.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.20" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.4.20" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.4.20" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-fragment:28.0.0@aar" level="project" />
