@@ -1,0 +1,5 @@
+This is an Android Studio project for a Pangrams app.
+
+The app will solve the pangram puzzle presented by the New York
+Times. The app accepts a set of unique characters as input and outputs
+a dictionary word that includes all input characters.
