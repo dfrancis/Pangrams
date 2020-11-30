@@ -30,6 +30,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.HashMap;
@@ -100,6 +101,7 @@ public class PangramsActivity extends AppCompatActivity {
         }
         // Log.i(TAG, ((HashSet<Character>) charSet).toString());
         String word = "Not found";
+        ArrayList<String> wordList = new ArrayList<String>();
         Iterator hmIterator = wordMap.entrySet().iterator();
         while (hmIterator.hasNext()) {
             Map.Entry mapElement = (Map.Entry)hmIterator.next();
@@ -107,10 +109,12 @@ public class PangramsActivity extends AppCompatActivity {
             // Log.i(TAG, ((HashSet<Character>) mapElement.getValue()).toString());
             if (mapElement.getValue().equals(charSet)) {
                 word = (String) mapElement.getKey();
-                break;
+                wordList.add(word);
             }
         }
-        resultView.append(Html.fromHtml(String.format("<font color=%s>%s</font><BR>", color, word)));
+        for (int i = 0; i < wordList.size(); i++) {
+            resultView.append(Html.fromHtml(String.format("<font color=%s>%s</font><BR>", color, wordList.get(i))));
+        }
         editText.setText("");
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.show();
