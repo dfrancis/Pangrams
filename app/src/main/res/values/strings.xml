@@ -2,4 +2,5 @@
     <string name="app_name">Pangrams</string>
     <string name="action_settings">Settings</string>
     <string name="play">Play</string>
+    <string name="status_begin">Press \'play\' to get started</string>
 </resources>
