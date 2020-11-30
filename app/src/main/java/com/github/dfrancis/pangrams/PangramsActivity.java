@@ -1,6 +1,6 @@
-/* Copyright 2020 David Francis dfrancis22@gmail.com
+/* Copyright 2020 David Francis <dfrancis22@gmail.com>
  *
- * Licensed under the MIT License (see LICENSE.txt for details).
+ * Licensed under the MIT License (see LICENSE for details).
  *
  */
 
