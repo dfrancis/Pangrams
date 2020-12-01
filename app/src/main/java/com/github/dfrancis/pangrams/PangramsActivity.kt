@@ -99,8 +99,12 @@ class PangramsActivity() : AppCompatActivity() {
             resultView.append(Html.fromHtml(String.format("<font color=%s>%s</font><BR>", color, wordList[i])))
         }
         editText.setText("")
+        editText.isEnabled = false
         val fab = findViewById<View>(R.id.fab) as FloatingActionButton
+        fab.setImageResource(android.R.drawable.ic_media_play)
         fab.show()
+        val gameStatus = findViewById<View>(R.id.gameStatusView) as TextView
+        gameStatus.setText(" Hit 'Play' to start again")
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -120,29 +124,21 @@ class PangramsActivity() : AppCompatActivity() {
     }
 
     fun defaultAction(view: View?): Boolean {
-        var currentWord: String? = null
         val gameStatus = findViewById<View>(R.id.gameStatusView) as TextView
         val fab = findViewById<View>(R.id.fab) as FloatingActionButton
         val editText = findViewById<View>(R.id.editText) as EditText
         val resultView = findViewById<View>(R.id.resultView) as TextView
-        if (currentWord == null) {
-            // gameStatus.setText(Html.fromHtml(String.format(START_MESSAGE, currentWord.toUpperCase(), currentWord)));
-            fab.setImageResource(android.R.drawable.ic_menu_help)
-            fab.hide()
-            resultView.text = ""
-            editText.setText("")
-            editText.isEnabled = true
-            editText.requestFocus()
-            val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
-            imm.showSoftInput(editText, InputMethodManager.SHOW_IMPLICIT)
-        } else {
-            editText.setText(currentWord)
-            editText.isEnabled = false
-            fab.setImageResource(android.R.drawable.ic_media_play)
-            currentWord = null
-            // resultView.append(TextUtils.join("\n", anagrams));
-            gameStatus.append(" Hit 'Play' to start again")
-        }
+
+        gameStatus.setText(START_MESSAGE)
+        fab.setImageResource(android.R.drawable.ic_menu_help)
+        fab.hide()
+        resultView.text = ""
+        editText.setText("")
+        editText.isEnabled = true
+        editText.requestFocus()
+        val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.showSoftInput(editText, InputMethodManager.SHOW_IMPLICIT)
+
         return true
     }
 
